@@ -1,0 +1,123 @@
+\hypertarget{classJeu}{}\doxysection{Jeu Class Reference}
+\label{classJeu}\index{Jeu@{Jeu}}
+
+
+Classe qui gère le déroulement du jeu.  
+
+
+
+
+{\ttfamily \#include $<$Jeu.\+h$>$}
+
+
+
+Collaboration diagram for Jeu\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classJeu__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJeu_acc5795ee00edf75516d3dfe65be3e6d6}\label{classJeu_acc5795ee00edf75516d3dfe65be3e6d6}} 
+\mbox{\hyperlink{classJeu_acc5795ee00edf75516d3dfe65be3e6d6}{Jeu}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classJeu}{Jeu}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJeu_ae12194f24c8ebc7fc89cca5397e4a903}{choix\+\_\+dir\+\_\+perso}} (SDL\+\_\+\+Event ev)
+\begin{DoxyCompactList}\small\item\em Gère la direction du personnage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a626e20bfb5a2ac9024a1cfe582f8cabd}\label{classJeu_a626e20bfb5a2ac9024a1cfe582f8cabd}} 
+void \mbox{\hyperlink{classJeu_a626e20bfb5a2ac9024a1cfe582f8cabd}{Boucle\+\_\+jeu}} ()
+\begin{DoxyCompactList}\small\item\em Boucle principale du jeu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_ad9c0d69988ceab9718ac0dccae1629f2}\label{classJeu_ad9c0d69988ceab9718ac0dccae1629f2}} 
+void \mbox{\hyperlink{classJeu_ad9c0d69988ceab9718ac0dccae1629f2}{actualiser\+\_\+mur}} ()
+\begin{DoxyCompactList}\small\item\em Actualise les murs. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJeu_a7e8b558110f9cbafa02dd924251fdea0}{check\+\_\+mur\+\_\+perso}} ()
+\begin{DoxyCompactList}\small\item\em Vérifie si le personnage est en collision avec un mur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a24d6324230b728a8dc370c5a26b80ba9}\label{classJeu_a24d6324230b728a8dc370c5a26b80ba9}} 
+bool {\bfseries check\+\_\+etoile\+\_\+perso} ()
+\item 
+\mbox{\hyperlink{classCellule}{Cellule}} \mbox{\hyperlink{classJeu_ade75e0088616c91163d7e91ea344d4a0}{coord\+Perso\+\_\+to\+\_\+\+Cellule}} ()
+\begin{DoxyCompactList}\small\item\em Convertit les coordonnées du personnage en cellule du labyrinthe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJeu_a065d62a78919f1b423057ad3dfd49046}\label{classJeu_a065d62a78919f1b423057ad3dfd49046}} 
+int {\bfseries decalage}
+\item 
+\mbox{\Hypertarget{classJeu_a66f111740543a3be8537337e7d27f717}\label{classJeu_a66f111740543a3be8537337e7d27f717}} 
+int {\bfseries level}
+\item 
+\mbox{\Hypertarget{classJeu_afb0579457934264653eea59d9d94d5ee}\label{classJeu_afb0579457934264653eea59d9d94d5ee}} 
+int {\bfseries score}
+\item 
+\mbox{\Hypertarget{classJeu_a92a8f7f43ed4f05cd6ed0e85e98aacbd}\label{classJeu_a92a8f7f43ed4f05cd6ed0e85e98aacbd}} 
+\mbox{\hyperlink{classLabyrinthe}{Labyrinthe}} {\bfseries laby\+\_\+suiv}
+\item 
+\mbox{\Hypertarget{classJeu_a01afca01bdd6362c4d34619f3ca500cd}\label{classJeu_a01afca01bdd6362c4d34619f3ca500cd}} 
+\mbox{\hyperlink{classLabyrinthe}{Labyrinthe}} {\bfseries laby}
+\item 
+\mbox{\Hypertarget{classJeu_afd8a70473261cf80b1a8dac2c36e1531}\label{classJeu_afd8a70473261cf80b1a8dac2c36e1531}} 
+\mbox{\hyperlink{classLabyrinthe}{Labyrinthe}} {\bfseries laby\+\_\+prec}
+\item 
+\mbox{\Hypertarget{classJeu_a749d4b9b26e6643ca6ad883927e264ed}\label{classJeu_a749d4b9b26e6643ca6ad883927e264ed}} 
+\mbox{\hyperlink{classPersonnage}{Personnage}} {\bfseries perso}
+\item 
+\mbox{\Hypertarget{classJeu_a26dca045c7b8360e2ecfc07e05d3a266}\label{classJeu_a26dca045c7b8360e2ecfc07e05d3a266}} 
+\mbox{\hyperlink{classMur}{Mur}} {\bfseries mur}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe qui gère le déroulement du jeu. 
+
+Cette classe gère la logique du jeu, y compris la boucle principale de jeu, la gestion des événements et la mise à jour de l\textquotesingle{}état du jeu. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJeu_a7e8b558110f9cbafa02dd924251fdea0}\label{classJeu_a7e8b558110f9cbafa02dd924251fdea0}} 
+\index{Jeu@{Jeu}!check\_mur\_perso@{check\_mur\_perso}}
+\index{check\_mur\_perso@{check\_mur\_perso}!Jeu@{Jeu}}
+\doxysubsubsection{\texorpdfstring{check\_mur\_perso()}{check\_mur\_perso()}}
+{\footnotesize\ttfamily bool Jeu\+::check\+\_\+mur\+\_\+perso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Vérifie si le personnage est en collision avec un mur. 
+
+\begin{DoxyReturn}{Returns}
+True si le personnage est en collision avec un mur, false sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJeu_ae12194f24c8ebc7fc89cca5397e4a903}\label{classJeu_ae12194f24c8ebc7fc89cca5397e4a903}} 
+\index{Jeu@{Jeu}!choix\_dir\_perso@{choix\_dir\_perso}}
+\index{choix\_dir\_perso@{choix\_dir\_perso}!Jeu@{Jeu}}
+\doxysubsubsection{\texorpdfstring{choix\_dir\_perso()}{choix\_dir\_perso()}}
+{\footnotesize\ttfamily void Jeu\+::choix\+\_\+dir\+\_\+perso (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event}]{ev }\end{DoxyParamCaption})}
+
+
+
+Gère la direction du personnage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ev} & Événement SDL à gérer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeu_ade75e0088616c91163d7e91ea344d4a0}\label{classJeu_ade75e0088616c91163d7e91ea344d4a0}} 
+\index{Jeu@{Jeu}!coordPerso\_to\_Cellule@{coordPerso\_to\_Cellule}}
+\index{coordPerso\_to\_Cellule@{coordPerso\_to\_Cellule}!Jeu@{Jeu}}
+\doxysubsubsection{\texorpdfstring{coordPerso\_to\_Cellule()}{coordPerso\_to\_Cellule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCellule}{Cellule}} Jeu\+::coord\+Perso\+\_\+to\+\_\+\+Cellule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Convertit les coordonnées du personnage en cellule du labyrinthe. 
+
+\begin{DoxyReturn}{Returns}
+La cellule correspondante aux coordonnées du personnage 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Jeu.\+h\item 
+src/Jeu.\+cpp\end{DoxyCompactItemize}

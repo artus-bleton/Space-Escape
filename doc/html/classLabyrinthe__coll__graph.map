@@ -1,0 +1,5 @@
+<map id="Labyrinthe" name="Labyrinthe">
+<area shape="rect" id="node1" title=" " alt="" coords="5,184,96,211"/>
+<area shape="rect" id="node2" href="$classCellule.html" title="Classe représentant une cellule dans un labyrinthe. Une cellule est définie par sa position dans le l..." alt="" coords="17,95,84,121"/>
+<area shape="rect" id="node3" href="$classPiece.html" title=" " alt="" coords="22,5,79,32"/>
+</map>

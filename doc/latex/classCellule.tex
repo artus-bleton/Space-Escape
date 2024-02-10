@@ -1,0 +1,311 @@
+\hypertarget{classCellule}{}\doxysection{Cellule Class Reference}
+\label{classCellule}\index{Cellule@{Cellule}}
+
+
+Classe représentant une cellule dans un labyrinthe. Une cellule est définie par sa position dans le labyrinthe et les murs qui la délimitent.  
+
+
+
+
+{\ttfamily \#include $<$Cellule.\+h$>$}
+
+
+
+Collaboration diagram for Cellule\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{classCellule__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCellule_a9ca08caa8c0665098fb620d4d5796ce2}\label{classCellule_a9ca08caa8c0665098fb620d4d5796ce2}} 
+\mbox{\hyperlink{classCellule_a9ca08caa8c0665098fb620d4d5796ce2}{Cellule}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de la classe \mbox{\hyperlink{classCellule}{Cellule}}. Initialise les murs à true (présents) et la valeur de la cellule à 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCellule_a62c79c012c471f8dc74714c3262a696c}\label{classCellule_a62c79c012c471f8dc74714c3262a696c}} 
+\mbox{\hyperlink{classCellule_a62c79c012c471f8dc74714c3262a696c}{$\sim$\+Cellule}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \mbox{\hyperlink{classCellule}{Cellule}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCellule_a9bc5154f1454451aa08c226d4adc07bc}{set\+North}} (bool no)
+\begin{DoxyCompactList}\small\item\em Setter pour le mur nord de la cellule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCellule_ae48fc990529ed2fd4de429d14c68a649}{set\+South}} (const bool so)
+\begin{DoxyCompactList}\small\item\em Setter pour le mur sud de la cellule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCellule_ae738e363791651399097e9dc38124488}{set\+Est}} (bool es)
+\begin{DoxyCompactList}\small\item\em Setter pour le mur est de la cellule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCellule_a8efecd278eedf82a6c727e9df60cda49}{set\+West}} (bool we)
+\begin{DoxyCompactList}\small\item\em Setter pour le mur ouest de la cellule. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCellule_a3fcbbf3ac9cc02959072782d0081e1d8}{get\+North}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour le mur nord de la cellule. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCellule_a86b54ace006d3ffa3df77c391fd8f4c3}{get\+South}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour le mur sud de la cellule. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCellule_ac559bea5988c4751fd5c8f61d488fbb3}{get\+Est}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour le mur est de la cellule. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCellule_a2ac947cd1be15a4637815cad6fab509d}{get\+West}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour le mur ouest de la cellule. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCellule_a522496d9549d43830c25229719132dc0}{get\+Valeure}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour la valeur de la cellule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCellule_af329abac3636bd4ead03e3701e6a6b92}{set\+Valeure}} (int val)
+\begin{DoxyCompactList}\small\item\em Setter pour la valeur de la cellule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCellule_ac6b34b2f6159602f452793f1744961e1}{set\+\_\+coint\+\_\+x}} (int unsigned coinX)
+\begin{DoxyCompactList}\small\item\em Setter pour la coordonnée x du coin supérieur gauche de la cellule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCellule_abbd613af8c92f3d91bb6b57e7f8a635e}{set\+\_\+coint\+\_\+y}} (int unsigned coinY)
+\begin{DoxyCompactList}\small\item\em Définit la position en y du coin de la cellule. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCellule_a5440007a6b843b221b09f56f08683c1e}{get\+\_\+coint\+\_\+x}} ()
+\begin{DoxyCompactList}\small\item\em Retourne la position en x du coin de la cellule. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCellule_a0daa31903d03ab193e19a194494e0bf0}{get\+\_\+coint\+\_\+y}} ()
+\begin{DoxyCompactList}\small\item\em Retourne la position en y du coin de la cellule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCellule_a897298e0d07e52d67dad8082cc802958}{del\+Mur\+From\+Direction\+Opo}} (int direction)
+\begin{DoxyCompactList}\small\item\em Supprime le mur opposé à celui donné en paramètre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCellule_a11eee8e1c33b086651fb4adb10cbcf04}{del\+Mur\+From\+Direction}} (int direction)
+\begin{DoxyCompactList}\small\item\em Supprime le mur dans la direction donnée en paramètre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCellule_ad352716593f763da97ba60523b609386}\label{classCellule_ad352716593f763da97ba60523b609386}} 
+void {\bfseries erase\+\_\+piece} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCellule_ab18c07eb93101d9937d6ab402c07a4cb}\label{classCellule_ab18c07eb93101d9937d6ab402c07a4cb}} 
+\mbox{\hyperlink{classPiece}{Piece}} \mbox{\hyperlink{classCellule_ab18c07eb93101d9937d6ab402c07a4cb}{piece}}
+\begin{DoxyCompactList}\small\item\em Indique si la cellule contient une piece ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCellule_aea1e073f8aec14b6a01505a688aca07b}\label{classCellule_aea1e073f8aec14b6a01505a688aca07b}} 
+bool {\bfseries piece\+\_\+test}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une cellule dans un labyrinthe. Une cellule est définie par sa position dans le labyrinthe et les murs qui la délimitent. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCellule_a11eee8e1c33b086651fb4adb10cbcf04}\label{classCellule_a11eee8e1c33b086651fb4adb10cbcf04}} 
+\index{Cellule@{Cellule}!delMurFromDirection@{delMurFromDirection}}
+\index{delMurFromDirection@{delMurFromDirection}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{delMurFromDirection()}{delMurFromDirection()}}
+{\footnotesize\ttfamily void Cellule\+::del\+Mur\+From\+Direction (\begin{DoxyParamCaption}\item[{int}]{direction }\end{DoxyParamCaption})}
+
+
+
+Supprime le mur dans la direction donnée en paramètre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & La direction du mur à supprimer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCellule_a897298e0d07e52d67dad8082cc802958}\label{classCellule_a897298e0d07e52d67dad8082cc802958}} 
+\index{Cellule@{Cellule}!delMurFromDirectionOpo@{delMurFromDirectionOpo}}
+\index{delMurFromDirectionOpo@{delMurFromDirectionOpo}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{delMurFromDirectionOpo()}{delMurFromDirectionOpo()}}
+{\footnotesize\ttfamily void Cellule\+::del\+Mur\+From\+Direction\+Opo (\begin{DoxyParamCaption}\item[{int}]{direction }\end{DoxyParamCaption})}
+
+
+
+Supprime le mur opposé à celui donné en paramètre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & La direction du mur à supprimer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCellule_a5440007a6b843b221b09f56f08683c1e}\label{classCellule_a5440007a6b843b221b09f56f08683c1e}} 
+\index{Cellule@{Cellule}!get\_coint\_x@{get\_coint\_x}}
+\index{get\_coint\_x@{get\_coint\_x}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{get\_coint\_x()}{get\_coint\_x()}}
+{\footnotesize\ttfamily int Cellule\+::get\+\_\+coint\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retourne la position en x du coin de la cellule. 
+
+\begin{DoxyReturn}{Returns}
+int La position en x du coin de la cellule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCellule_a0daa31903d03ab193e19a194494e0bf0}\label{classCellule_a0daa31903d03ab193e19a194494e0bf0}} 
+\index{Cellule@{Cellule}!get\_coint\_y@{get\_coint\_y}}
+\index{get\_coint\_y@{get\_coint\_y}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{get\_coint\_y()}{get\_coint\_y()}}
+{\footnotesize\ttfamily int Cellule\+::get\+\_\+coint\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retourne la position en y du coin de la cellule. 
+
+\begin{DoxyReturn}{Returns}
+int La position en y du coin de la cellule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCellule_ac559bea5988c4751fd5c8f61d488fbb3}\label{classCellule_ac559bea5988c4751fd5c8f61d488fbb3}} 
+\index{Cellule@{Cellule}!getEst@{getEst}}
+\index{getEst@{getEst}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{getEst()}{getEst()}}
+{\footnotesize\ttfamily bool Cellule\+::get\+Est (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour le mur est de la cellule. 
+
+\begin{DoxyReturn}{Returns}
+un booléen indiquant la présence (true) ou l\textquotesingle{}absence (false) du mur est. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCellule_a3fcbbf3ac9cc02959072782d0081e1d8}\label{classCellule_a3fcbbf3ac9cc02959072782d0081e1d8}} 
+\index{Cellule@{Cellule}!getNorth@{getNorth}}
+\index{getNorth@{getNorth}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{getNorth()}{getNorth()}}
+{\footnotesize\ttfamily bool Cellule\+::get\+North (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour le mur nord de la cellule. 
+
+\begin{DoxyReturn}{Returns}
+un booléen indiquant la présence (true) ou l\textquotesingle{}absence (false) du mur nord. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCellule_a86b54ace006d3ffa3df77c391fd8f4c3}\label{classCellule_a86b54ace006d3ffa3df77c391fd8f4c3}} 
+\index{Cellule@{Cellule}!getSouth@{getSouth}}
+\index{getSouth@{getSouth}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{getSouth()}{getSouth()}}
+{\footnotesize\ttfamily bool Cellule\+::get\+South (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour le mur sud de la cellule. 
+
+\begin{DoxyReturn}{Returns}
+un booléen indiquant la présence (true) ou l\textquotesingle{}absence (false) du mur sud. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCellule_a522496d9549d43830c25229719132dc0}\label{classCellule_a522496d9549d43830c25229719132dc0}} 
+\index{Cellule@{Cellule}!getValeure@{getValeure}}
+\index{getValeure@{getValeure}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{getValeure()}{getValeure()}}
+{\footnotesize\ttfamily int Cellule\+::get\+Valeure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour la valeur de la cellule. 
+
+\begin{DoxyReturn}{Returns}
+un entier représentant la valeur de la cellule. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCellule_a2ac947cd1be15a4637815cad6fab509d}\label{classCellule_a2ac947cd1be15a4637815cad6fab509d}} 
+\index{Cellule@{Cellule}!getWest@{getWest}}
+\index{getWest@{getWest}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{getWest()}{getWest()}}
+{\footnotesize\ttfamily bool Cellule\+::get\+West (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour le mur ouest de la cellule. 
+
+\begin{DoxyReturn}{Returns}
+un booléen indiquant la présence (true) ou l\textquotesingle{}absence (false) du mur ouest. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCellule_ac6b34b2f6159602f452793f1744961e1}\label{classCellule_ac6b34b2f6159602f452793f1744961e1}} 
+\index{Cellule@{Cellule}!set\_coint\_x@{set\_coint\_x}}
+\index{set\_coint\_x@{set\_coint\_x}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{set\_coint\_x()}{set\_coint\_x()}}
+{\footnotesize\ttfamily void Cellule\+::set\+\_\+coint\+\_\+x (\begin{DoxyParamCaption}\item[{int unsigned}]{coinX }\end{DoxyParamCaption})}
+
+
+
+Setter pour la coordonnée x du coin supérieur gauche de la cellule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coinX} & \+: un entier non signé représentant la coordonnée x. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCellule_abbd613af8c92f3d91bb6b57e7f8a635e}\label{classCellule_abbd613af8c92f3d91bb6b57e7f8a635e}} 
+\index{Cellule@{Cellule}!set\_coint\_y@{set\_coint\_y}}
+\index{set\_coint\_y@{set\_coint\_y}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{set\_coint\_y()}{set\_coint\_y()}}
+{\footnotesize\ttfamily void Cellule\+::set\+\_\+coint\+\_\+y (\begin{DoxyParamCaption}\item[{int unsigned}]{coinY }\end{DoxyParamCaption})}
+
+
+
+Définit la position en y du coin de la cellule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coinY} & La position en y du coin de la cellule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCellule_ae738e363791651399097e9dc38124488}\label{classCellule_ae738e363791651399097e9dc38124488}} 
+\index{Cellule@{Cellule}!setEst@{setEst}}
+\index{setEst@{setEst}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{setEst()}{setEst()}}
+{\footnotesize\ttfamily void Cellule\+::set\+Est (\begin{DoxyParamCaption}\item[{bool}]{es }\end{DoxyParamCaption})}
+
+
+
+Setter pour le mur est de la cellule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em es} & \+: booléen indiquant la présence (true) ou l\textquotesingle{}absence (false) du mur est. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCellule_a9bc5154f1454451aa08c226d4adc07bc}\label{classCellule_a9bc5154f1454451aa08c226d4adc07bc}} 
+\index{Cellule@{Cellule}!setNorth@{setNorth}}
+\index{setNorth@{setNorth}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{setNorth()}{setNorth()}}
+{\footnotesize\ttfamily void Cellule\+::set\+North (\begin{DoxyParamCaption}\item[{bool}]{no }\end{DoxyParamCaption})}
+
+
+
+Setter pour le mur nord de la cellule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & \+: booléen indiquant la présence (true) ou l\textquotesingle{}absence (false) du mur nord. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCellule_ae48fc990529ed2fd4de429d14c68a649}\label{classCellule_ae48fc990529ed2fd4de429d14c68a649}} 
+\index{Cellule@{Cellule}!setSouth@{setSouth}}
+\index{setSouth@{setSouth}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{setSouth()}{setSouth()}}
+{\footnotesize\ttfamily void Cellule\+::set\+South (\begin{DoxyParamCaption}\item[{const bool}]{so }\end{DoxyParamCaption})}
+
+
+
+Setter pour le mur sud de la cellule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em so} & \+: booléen indiquant la présence (true) ou l\textquotesingle{}absence (false) du mur sud. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCellule_af329abac3636bd4ead03e3701e6a6b92}\label{classCellule_af329abac3636bd4ead03e3701e6a6b92}} 
+\index{Cellule@{Cellule}!setValeure@{setValeure}}
+\index{setValeure@{setValeure}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{setValeure()}{setValeure()}}
+{\footnotesize\ttfamily void Cellule\+::set\+Valeure (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Setter pour la valeur de la cellule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \+: un entier représentant la valeur à attribuer à la cellule. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCellule_a8efecd278eedf82a6c727e9df60cda49}\label{classCellule_a8efecd278eedf82a6c727e9df60cda49}} 
+\index{Cellule@{Cellule}!setWest@{setWest}}
+\index{setWest@{setWest}!Cellule@{Cellule}}
+\doxysubsubsection{\texorpdfstring{setWest()}{setWest()}}
+{\footnotesize\ttfamily void Cellule\+::set\+West (\begin{DoxyParamCaption}\item[{bool}]{we }\end{DoxyParamCaption})}
+
+
+
+Setter pour le mur ouest de la cellule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em we} & \+: booléen indiquant la présence (true) ou l\textquotesingle{}absence (false) du mur ouest. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Cellule.\+h\item 
+src/Cellule.\+cpp\end{DoxyCompactItemize}

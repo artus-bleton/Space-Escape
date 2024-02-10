@@ -1,0 +1,133 @@
+\hypertarget{classPersonnage}{}\doxysection{Personnage Class Reference}
+\label{classPersonnage}\index{Personnage@{Personnage}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPersonnage_abec36eb0310adc71f3375297fc590c65}\label{classPersonnage_abec36eb0310adc71f3375297fc590c65}} 
+\mbox{\hyperlink{classPersonnage_abec36eb0310adc71f3375297fc590c65}{Personnage}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPersonnage_a0b617e6b57e45e0fadd6cce23757e520}{Personnage}} (int X, int Y, int decal)
+\begin{DoxyCompactList}\small\item\em Constructeur avec des paramètres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_a05bdf2a469885bb1fbb6c2e8f98972ab}\label{classPersonnage_a05bdf2a469885bb1fbb6c2e8f98972ab}} 
+\mbox{\hyperlink{classPersonnage_a05bdf2a469885bb1fbb6c2e8f98972ab}{$\sim$\+Personnage}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_aff01f0517eb360ef9895648e0f6161e4}\label{classPersonnage_aff01f0517eb360ef9895648e0f6161e4}} 
+void \mbox{\hyperlink{classPersonnage_aff01f0517eb360ef9895648e0f6161e4}{deplacer\+\_\+droite}} ()
+\begin{DoxyCompactList}\small\item\em Déplace le personnage vers la droite. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_a49fee24bd9c9e453b6343328883edf8a}\label{classPersonnage_a49fee24bd9c9e453b6343328883edf8a}} 
+void \mbox{\hyperlink{classPersonnage_a49fee24bd9c9e453b6343328883edf8a}{deplacer\+\_\+gauche}} ()
+\begin{DoxyCompactList}\small\item\em Déplace le personnage vers la gauche. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_a8f9d320aa4e2248bf37ddbe9a25ad005}\label{classPersonnage_a8f9d320aa4e2248bf37ddbe9a25ad005}} 
+void \mbox{\hyperlink{classPersonnage_a8f9d320aa4e2248bf37ddbe9a25ad005}{deplacer\+\_\+haut}} ()
+\begin{DoxyCompactList}\small\item\em Déplace le personnage vers le haut. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_ae4f747c01739b24e4b36417b1321ec9a}\label{classPersonnage_ae4f747c01739b24e4b36417b1321ec9a}} 
+void \mbox{\hyperlink{classPersonnage_ae4f747c01739b24e4b36417b1321ec9a}{deplacer\+\_\+bas}} ()
+\begin{DoxyCompactList}\small\item\em Déplace le personnage vers le bas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPersonnage_a94d7086004020f5e4ec32259cfbd8235}{Init\+Perso\+\_\+\+SDL}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Initialise le personnage avec la bibliothèque graphique SDL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPersonnage_a82936d12a19a5e1bb2243dd556e9e504}{choix\+\_\+deplacement\+\_\+personnage}} (int choix, bool collision)
+\begin{DoxyCompactList}\small\item\em Choix de déplacement pour le personnage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPersonnage_a2f9a94517d8bd9e35c26beac10786e25}{Actualiser\+\_\+\+Perso}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Actualise l\textquotesingle{}affichage du personnage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_ab70b2d523da196f6fc0d280db42bf243}\label{classPersonnage_ab70b2d523da196f6fc0d280db42bf243}} 
+void \mbox{\hyperlink{classPersonnage_ab70b2d523da196f6fc0d280db42bf243}{test\+\_\+regression\+Per}} ()
+\begin{DoxyCompactList}\small\item\em Test de régression pour le personnage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPersonnage_a60599f22d58a7c88c354cbaa7082f839}\label{classPersonnage_a60599f22d58a7c88c354cbaa7082f839}} 
+int \mbox{\hyperlink{classPersonnage_a60599f22d58a7c88c354cbaa7082f839}{pos\+\_\+x}}
+\begin{DoxyCompactList}\small\item\em La position horizontale du personnage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_a2e4c2572f5d9740cf142f102256368ff}\label{classPersonnage_a2e4c2572f5d9740cf142f102256368ff}} 
+int \mbox{\hyperlink{classPersonnage_a2e4c2572f5d9740cf142f102256368ff}{pos\+\_\+y}}
+\begin{DoxyCompactList}\small\item\em La position verticale du personnage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_a389189dd9d350f76f6805f36c65b6ada}\label{classPersonnage_a389189dd9d350f76f6805f36c65b6ada}} 
+int \mbox{\hyperlink{classPersonnage_a389189dd9d350f76f6805f36c65b6ada}{decalage}}
+\begin{DoxyCompactList}\small\item\em Le décalage du personnage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_ad1c4b87545a0db2f3268e949c3daecc9}\label{classPersonnage_ad1c4b87545a0db2f3268e949c3daecc9}} 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classPersonnage_ad1c4b87545a0db2f3268e949c3daecc9}{image\+Surface}}
+\begin{DoxyCompactList}\small\item\em La surface de l\textquotesingle{}image du personnage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_a916b7aca7c1d83b8aac4a44baaa35a5b}\label{classPersonnage_a916b7aca7c1d83b8aac4a44baaa35a5b}} 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classPersonnage_a916b7aca7c1d83b8aac4a44baaa35a5b}{Texture}}
+\begin{DoxyCompactList}\small\item\em La texture du personnage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonnage_adc94cd400946a2862a7c797fd3116613}\label{classPersonnage_adc94cd400946a2862a7c797fd3116613}} 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classPersonnage_adc94cd400946a2862a7c797fd3116613}{rect}}
+\begin{DoxyCompactList}\small\item\em Le rectangle SDL du personnage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPersonnage_a0b617e6b57e45e0fadd6cce23757e520}\label{classPersonnage_a0b617e6b57e45e0fadd6cce23757e520}} 
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{Personnage()}{Personnage()}}
+{\footnotesize\ttfamily Personnage\+::\+Personnage (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{decal }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec des paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & \+: la position horizontale initiale du personnage \\
+\hline
+{\em Y} & \+: la position verticale initiale du personnage \\
+\hline
+{\em decal} & \+: le décalage du personnage \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPersonnage_a2f9a94517d8bd9e35c26beac10786e25}\label{classPersonnage_a2f9a94517d8bd9e35c26beac10786e25}} 
+\index{Personnage@{Personnage}!Actualiser\_Perso@{Actualiser\_Perso}}
+\index{Actualiser\_Perso@{Actualiser\_Perso}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{Actualiser\_Perso()}{Actualiser\_Perso()}}
+{\footnotesize\ttfamily void Personnage\+::\+Actualiser\+\_\+\+Perso (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Actualise l\textquotesingle{}affichage du personnage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \+: le renderer de la fenêtre SDL \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersonnage_a82936d12a19a5e1bb2243dd556e9e504}\label{classPersonnage_a82936d12a19a5e1bb2243dd556e9e504}} 
+\index{Personnage@{Personnage}!choix\_deplacement\_personnage@{choix\_deplacement\_personnage}}
+\index{choix\_deplacement\_personnage@{choix\_deplacement\_personnage}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{choix\_deplacement\_personnage()}{choix\_deplacement\_personnage()}}
+{\footnotesize\ttfamily void Personnage\+::choix\+\_\+deplacement\+\_\+personnage (\begin{DoxyParamCaption}\item[{int}]{choix,  }\item[{bool}]{collision }\end{DoxyParamCaption})}
+
+
+
+Choix de déplacement pour le personnage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choix} & \+: le choix de déplacement du personnage \\
+\hline
+{\em collision} & \+: indique si le personnage est en collision \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersonnage_a94d7086004020f5e4ec32259cfbd8235}\label{classPersonnage_a94d7086004020f5e4ec32259cfbd8235}} 
+\index{Personnage@{Personnage}!InitPerso\_SDL@{InitPerso\_SDL}}
+\index{InitPerso\_SDL@{InitPerso\_SDL}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{InitPerso\_SDL()}{InitPerso\_SDL()}}
+{\footnotesize\ttfamily void Personnage\+::\+Init\+Perso\+\_\+\+SDL (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Initialise le personnage avec la bibliothèque graphique SDL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \+: le renderer de la fenêtre SDL \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Personnage.\+h\item 
+src/Personnage.\+cpp\end{DoxyCompactItemize}
